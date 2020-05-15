@@ -20,7 +20,7 @@ go get github.com/phiskills/http-api.go
 package main
 import "github.com/phiskills/http-api.go"
 
-api := http.New()
+api := http.New('My API')
 api.Register("/", http.Router{
 	Get: func(ctx *http.Context) { ... },
 })
